@@ -1,8 +1,7 @@
 # Bus emissions challenge 
 ---
 
-
-### Introduction
+## Introduction
 
 Kent and Medway have the highest proportion of old buses in the country (~40% of fleet). Old buses are detrimental to the environment as the older buses only have Euro III emissions standards which if used for lots of 
 journeys will be dramatically impacting the air quality of the area. 
@@ -20,13 +19,13 @@ data and converted it to JSON format accessible to download [here](https://drive
 
 This is the data dictionary for records in the bus_journeys data (all fields are alphanumeric):  
 
-LineRef--------------------------------------bus route number  
-DirectionRef------------------------------current direction of travel, inbound or outbound   
-PublishedLineName------------------timetabled service name (may be same as LineRef)  
-OriginName-------------------------------start location of the current route  
-DestinationName----------------------end destination on the current route  
+LineRef-----------------------------bus route number  
+DirectionRef-----------------------current direction of travel, inbound or outbound   
+PublishedLineName---------------timetabled service name (may be same as LineRef)  
+OriginName-----------------------start location of the current route  
+DestinationName-----------------end destination on the current route  
 OriginAimedDepartureTime------the time at which the bus was timetabled to leave its start location    
-Ref---------------------------------------------a uniquely identifier for the bus vehicle  
+Ref---------------------------------a uniquely identifier for the bus vehicle  
 
 The bus_journeys data contains a list of records with the fields shown above.  This list contains a records for each bus that is currently on a bus route (assuming that all are tranmitting their locations) 
   
@@ -70,7 +69,7 @@ There will be 14 records in this list
 
 **COMPLETE THIS TASK IN YOUR USUAL JAVASCRIPT EDITOR**
 
-### Task 4 
+### Task 4 
 ---
 
 The indexes of `vehicle_refs` match the indexes of `emissions`.   
@@ -86,7 +85,7 @@ Create a dictionary where each unique emission_class is a key and its correspond
 
 (hint: you could think about using the unique_em list you created earlier)
 
-Example Output
+**Example Output**
 
 {"EURO III": [1234, 4567, 8910], "EURO IV": [1028, 1283, 1234]}
 
@@ -123,8 +122,9 @@ Emissions data is in this variable: ***emissions_data***
 
 **Emissions Data dictionary**
 
-Field------------------------------Data Type------------Description  
-Emission Standard-------Alphanumeric------Euro III, IV, V or VI	
+Field----------------------------- Data Type---------------Description  
+
+Emission Standard--------------- Alphanumeric----------Euro III, IV, V or VI   
 CO2-------------------------------Float--------------------grams of CO2 emitted per KWhr  
 Nox-------------------------------Float--------------------grams of Nox emitted per KWhr  
 PM--------------------------------Float--------------------grams of particulate matter emitted per gm/KWhr  
@@ -133,11 +133,11 @@ PM--------------------------------Float--------------------grams of particulate 
 The 132 route is 12.5km from end to end  
 The 116 route is 15.25km  
 
-####**Task**  
+#### **Task**  
 
 Write a function that takes the miles per gallon and the route (LineRef) as a parameter and calculates the emission of each of the 3 pollutants for a return journey on that route.
 
-####**Extension**  
+#### **Extension**  
 
 Find all the 116 and 132 buses in the data set (a snapshot of what is on the road at that particular point in time).  
 
