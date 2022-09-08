@@ -92,7 +92,7 @@ Example Output
 
 **COMPLETE THIS TASK IN YOUR USUAL JAVASCRIPT EDITOR**
 
-### Task 6
+### Task 6
 ---
 Find all the polluting buses that were running when the data was collected.   
 Using the `bus_journeys` dictionary, find all the records where a Euro III bus was used. 
